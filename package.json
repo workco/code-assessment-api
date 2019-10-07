@@ -1,0 +1,9 @@
+{
+  "name": "code-assessment-api",
+  "version": "1.0.0",
+  "description": "API for Work & Co code assessment",
+  "main": "index.js",
+  "author": "Nick Lee",
+  "license": "UNLICENSED",
+  "private": true
+}
