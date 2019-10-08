@@ -20,6 +20,27 @@ $ # Start the server
 $ yarn start
 ```
 
+## Schema
+
+Products returned by this service have the following schema:
+
+```javascript
+{
+    "id": Number,
+    "title": String, 
+    "price": {
+      "value": Number,
+      "currency": String
+    },
+    "inventory": Number,
+    "image": {
+      "url": String,
+      "width": Number,
+      "height": Number
+    }
+}
+```
+
 ## API
 
 ### GraphQL Interface (preferred)
