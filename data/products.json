@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "productTitle": "Chronograph",
+    "title": "Chronograph",
     "price": {
       "value": 500.01,
       "currency": "USD"
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "productTitle": "Quartz",
+    "title": "Quartz",
     "price": {
       "value": 10.99,
       "currency": "USD"
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "productTitle": "Weekender",
+    "title": "Weekender",
     "price": {
       "value": 19.99,
       "currency": "USD"

@@ -20,6 +20,10 @@ const startServer = async () => {
     }
   });
 
+  const graphQLServer = require("./graphql");
+  graphQLServer.applyMiddleware({ app: server });
+  graphQLServer.installSubscriptionHandlers(server.listener);
+
   await server.start();
   console.log(`🚀  Server running on ${server.info.uri}`);
 };
