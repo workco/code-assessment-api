@@ -58,6 +58,38 @@ module.exports = gql`
     image: Image
   }
 
+  """
+  An item in the cart
+  """
+  input CartItem {
+    """
+    Product ID
+    """
+    id: Int!
+    """
+    Quantity of item currently in cart
+    """
+    count: Int!
+  }
+
+  """
+  Cart
+  """
+  type Cart {
+    """
+    Sum of items in cart, without tax
+    """
+    subtotal: Price
+    """
+    Tax on items in cart
+    """
+    tax: Price
+    """
+    Sum of items in cart, with tax
+    """
+    total: Price
+  }
+
   type Query {
     """
     Returns all products
@@ -67,5 +99,9 @@ module.exports = gql`
     Returns a product by the specified id, or null if not found
     """
     product(id: Int!): Product
+    """
+    Returns cart price breakdown
+    """
+    cart(items: [CartItem]!): Cart
   }
 `;
