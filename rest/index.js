@@ -25,5 +25,13 @@ module.exports = {
         }
       }
     });
+
+    server.route({
+      method: "GET",
+      path: "/cart",
+      handler: request => {
+        return Data.calcCart(JSON.parse(request.query.items))
+      }
+    });
   }
 };
