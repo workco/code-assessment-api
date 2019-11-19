@@ -16,23 +16,26 @@ module.exports = gql`
   }
 
   """
-  An image stored remotely on a server
+  A type of image
+  """
+  enum ImageType {
+    default
+    featured
+  }
+
+  """
+  An image hosted on the server
   """
   type Image {
     """
-    The URL for the image
+    The relative path for the image
     """
-    url: String!
+    src: String!
 
     """
-    The width of the image in pixels
+    The type of image
     """
-    width: Int!
-
-    """
-    The height of the image in pixels
-    """
-    height: Int!
+    type: ImageType!
   }
 
   """
@@ -55,7 +58,7 @@ module.exports = gql`
     """
     An image of the product
     """
-    image: Image
+    images: [Image]
   }
 
   """

@@ -7,11 +7,16 @@
       "currency": "USD"
     },
     "inventory": 2,
-    "image": {
-      "url": "https://images.rolex.com/2019/catalogue/images/upright-bba-with-shadow/m116500ln-0001.png?imwidth=1024",
-      "width": 1024,
-      "height": 768
-    }
+    "images": [
+        {
+            "type": "featured",
+            "src": "/assets/1-featured.png"
+        },
+        {
+            "type": "default",
+            "src": "/assets/1-default.png"
+        }
+    ]
   },
   {
     "id": 2,
@@ -21,11 +26,12 @@
       "currency": "USD"
     },
     "inventory": 0,
-    "image": {
-      "url": "https://images.rolex.com/2019/catalogue/images/upright-bba-with-shadow/m115234-0011.png?impolicy=upright-grid-card&imwidth=585",
-      "width": 1024,
-      "height": 768
-    }
+    "images": [
+      {
+          "type": "default",
+          "src": "/assets/2-default.png"
+      }
+    ]
   },
   {
     "id": 3,
@@ -35,10 +41,11 @@
       "currency": "USD"
     },
     "inventory": 5,
-    "image": {
-      "url": "https://images.rolex.com/2019/catalogue/images/upright-bba-with-shadow/m116610ln-0001.png?impolicy=upright-grid-card&imwidth=585",
-      "width": 1024,
-      "height": 768
-    }
+    "images": [
+      {
+          "type": "default",
+          "src": "/assets/3-default.png"
+      }
+    ]
   }
 ]

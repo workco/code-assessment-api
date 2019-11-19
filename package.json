@@ -9,11 +9,13 @@
   "dependencies": {
     "@hapi/boom": "^8.0.1",
     "@hapi/hapi": "^18.4.0",
+    "@hapi/inert": "^5.2.2",
     "@hapi/joi": "^15.1.1",
     "apollo-server-hapi": "^2.9.5",
     "graphql": "^14.5.8",
     "lodash": "^4.17.15",
-    "nconf": "^0.10.0"
+    "nconf": "^0.10.0",
+    "path": "^0.12.7"
   },
   "scripts": {
     "start": "node ./index.js"
