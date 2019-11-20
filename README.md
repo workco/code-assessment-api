@@ -33,10 +33,30 @@ Products returned by this service have the following schema:
       "currency": String
     },
     "inventory": Number,
-    "image": {
-      "url": String,
-      "width": Number,
-      "height": Number
+    "images": [
+      {
+        "src": String,
+        "type": String
+      }
+    ]
+}
+```
+
+The service also returns a price breakdown for a list of cart items:
+
+```javascript
+{
+    "subtotal": {
+      "value": Number,
+      "currency": String
+    },
+    "tax": {
+      "value": Number,
+      "currency": String
+    },
+    "total": {
+      "value": Number,
+      "currency": String
     }
 }
 ```
