@@ -99,10 +99,6 @@ module.exports = gql`
     """
     products: [Product!]!
     """
-    Returns a product by the specified id, or null if not found
-    """
-    product(id: Int!): Product
-    """
     Returns cart price breakdown
     """
     cart(items: [CartItem]!): Cart

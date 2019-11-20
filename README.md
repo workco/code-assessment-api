@@ -56,5 +56,4 @@ The REST interface to the products data can be accessed at `/rest`. The response
 Two endpoints are currently exposed:
 
 * GET `/rest/products/` - returns an array of all products
-* GET `/rest/products/{id}` - returns a product with the specified ID, or HTTP `404` if the product is not found.
 * GET `/rest/cart` - calculates subtotal, tax, and total for cart items provided as a query param, eg `/rest/cart?items=[{"id":1,"count":1},{"id":2,"count":2}]`

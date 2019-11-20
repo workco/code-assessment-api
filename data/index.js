@@ -8,7 +8,6 @@ const getProduct = id => _.find(products, _.matchesProperty("id", id))
 
 module.exports = {
   getProducts: () => products,
-  getProduct,
   calcCart: items => {
     const sum = items.reduce((acc, { id, count }) => {
       const product = getProduct(id)
