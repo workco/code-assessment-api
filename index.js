@@ -15,6 +15,7 @@ const startServer = async () => {
     port: NConf.get("PORT"),
     host: NConf.get("HOST"),
     routes: {
+      cors: true,
       files: {
           relativeTo: Path.join(__dirname, "static")
       }
