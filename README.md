@@ -38,7 +38,8 @@ Products returned by this service have the following schema:
         "src": String,
         "type": String
       }
-    ]
+    ],
+    "description": String
 }
 ```
 

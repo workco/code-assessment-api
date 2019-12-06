@@ -62,6 +62,10 @@ module.exports = gql`
     An image of the product
     """
     images: [Image]
+    """
+    A product description
+    """
+    description: String!
   }
 
   """
