@@ -21,6 +21,9 @@ module.exports = gql`
   enum ImageType {
     default
     featured
+    alt1
+    alt2
+    alt3
   }
 
   """
