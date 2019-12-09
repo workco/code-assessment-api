@@ -2,6 +2,8 @@
 
 A small web service for potential hires to consume in the performance of their code assessments.
 
+The `master` branch automatically deploys to https://work-co-code-assessment.herokuapp.com/. Please note this is a basic instance, so the initial data load may take ~30 seconds to spin up.
+
 ## Setup
 
 ### Config
@@ -52,6 +54,10 @@ The service also returns a price breakdown for a list of cart items:
       "currency": String
     },
     "tax": {
+      "value": Number,
+      "currency": String
+    },
+    "shipping": {
       "value": Number,
       "currency": String
     },

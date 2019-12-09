@@ -95,6 +95,10 @@ module.exports = gql`
     """
     tax: Price
     """
+    Shipping cost
+    """
+    shipping: Price
+    """
     Sum of items in cart, with tax
     """
     total: Price
