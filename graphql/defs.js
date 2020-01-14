@@ -19,11 +19,14 @@ module.exports = gql`
   A type of image
   """
   enum ImageType {
-    default
-    featured
-    alt1
-    alt2
-    alt3
+    defaultRect
+    defaultSquare
+    alt1Rect
+    alt1Square
+    alt2Rect
+    alt2Square
+    alt3Rect
+    alt3Square
   }
 
   """
