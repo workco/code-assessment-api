@@ -19,9 +19,9 @@ module.exports = {
 
     const subtotal = toFixed(sum)
     const tax = toFixed(subtotal * 0.08)
-    const total = toFixed(subtotal + tax)
-
     const shipping = subtotal >= 50 ? 0 : 12
+
+    const total = toFixed(subtotal + tax + shipping)
 
     return {
       subtotal: {
