@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "20.2.2",
     "@hapi/inert": "^5.2.2",
     "@hapi/joi": "^15.1.1",
     "apollo-server-hapi": "^2.9.5",
